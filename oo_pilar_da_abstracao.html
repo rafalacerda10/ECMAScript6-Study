@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oo_Pilar_Abstracao</title>
+    <script>
+        
+        // Class representa  modelo do objeto
+        class ContaBancaria {
+            // Agencia numeroConta saldo lmite
+            constructor() {
+                // Operador this
+                this.agencia  = 2090
+                this.numeroConta = 5432523
+                this.saldo = 50
+                this.limite = 2000
+            }
+            depositar(valorDeposito) {
+                this.saldo += valorDeposito
+            }
+            sacar(valorSaque) {
+                this.saldo -= valorSaque
+            }
+            consultarSaldo() {
+                return this.saldo
+
+            }
+        }
+
+                    // Criação Identidade
+         let x = new ContaBancaria()
+         let y = new ContaBancaria()
+
+
+       console.log(x.consultarSaldo())
+       x.depositar(453524)
+       console.log(x.consultarSaldo())
+       x.sacar(432)
+       console.log(x.consultarSaldo())
+
+    </script>
+</head>
+<body>
+    <div class="nada">Nada</div>
+    
+</body>
+</html>

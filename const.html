@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+    <script>
+
+      const SERIE = 'Friends'
+      // Constantes utilizar nomes Maiusculos e o processo de atribuição tem de ser imediato
+        // Em momento nenhum pode ser modificado constante.
+
+        function x() {
+            // Dentro de outro escopo (-) bloco
+            const SERIE = 'The Walking Dead'
+            console.log('dentro da funcao:' + SERIE)
+        }
+
+        x()
+        console.log('escopo global' + SERIE)
+    </script>
+</head>
+<body>
+    <div class="nada">Nada</div>
+    
+</body>
+</html>

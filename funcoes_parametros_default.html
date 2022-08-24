@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcoes_parametros_default</title>
+    <script>
+
+        function contarUmaHistoria(personagem = 'Neymar', time = 'Santos', pai = 'Tbm é Neymar') {
+            document.write(`Era uma vez um menino chamado ${personagem}, ele gostava ${time}?, seu pai era o ${pai}?, e eles viveram felizes para sempre`)
+        }
+
+        contarUmaHistoria() // Erro undefiend // Para contornar esses problemas tivemos a possibilidade de valores default
+        // Os valores default terá sobreprosição do undefield
+
+        // Se usarmos undefined para um parametro o JS assume o parametro default
+    </script>
+</head>
+<body>
+    <div class="nada">Nada</div>
+    
+</body>
+</html>
